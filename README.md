@@ -20,7 +20,10 @@ Clone this git repository
 
 `git clone https://gitlab.com/freekvh/dsmr-mqtt-wrapper.git`
 
+In the config.yaml file, change the value for mqtt_broker_address to the address
+of your mqtt broker.
+
 Add a line in the crontab so that the script starts at boot, if you cloned this
-repo to ~/projects (/home/pi/projects), add the following line:
+repo to the home directory of the pi user (/home/pi), add the following line:
 
 `@reboot /bin/bash -c 'cd $HOME/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py' > /dev/null 2>&1`
