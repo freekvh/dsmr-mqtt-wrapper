@@ -7,12 +7,14 @@ and leans heavily on the dsmr_parser library from Nigel Dokter (Github).
 ## Instalation
 Optionally create a virtual environment and enter it, on Raspbian do;
 
-```
-sudo apt-get install python3-venv
-python3 -m venv ~/.venv/dsmr-mqtt-wrapper
-source ~/.venv/dsmr-mqtt-wrapper/bin/activate
-pip3 install wheel
-```
+`sudo apt-get install python3-venv`
+
+`python3 -m venv ~/.venv/dsmr-mqtt-wrapper`
+
+`source ~/.venv/dsmr-mqtt-wrapper/bin/activate`
+
+`pip3 install wheel`
+
 
 Clone this git repository
 
