@@ -19,6 +19,6 @@ Clone this git repository
 `git clone https://gitlab.com/freekvh/dsmr-mqtt-wrapper.git`
 
 Add a line in the crontab so that the script starts at boot, if you cloned this
-repo to ~/ (/home/pi), add the following line:
+repo to ~/projects (/home/pi/projects), add the following line:
 
-`@reboot cd $HOME/projects/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py`
+`@reboot /bin/bash -c 'cd $HOME/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py' > /dev/null 2>&1`
