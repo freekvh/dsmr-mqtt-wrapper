@@ -7,10 +7,12 @@ and leans heavily on the dsmr_parser library from Nigel Dokter (Github).
 ## Instalation
 Optionally create a virtual environment and enter it, on Raspbian do;
 
-`sudo apt-get install python3-venv`
-`python3 -m venv ~/.venv/dsmr-mqtt-wrapper`
-`source ~/.venv/dsmr-mqtt-wrapper/bin/activate`
-`pip3 install wheel`
+```
+sudo apt-get install python3-venv
+python3 -m venv ~/.venv/dsmr-mqtt-wrapper
+source ~/.venv/dsmr-mqtt-wrapper/bin/activate
+pip3 install wheel
+```
 
 Clone this git repository
 
@@ -19,4 +21,4 @@ Clone this git repository
 Add a line in the crontab so that the script starts at boot, if you cloned this
 repo to ~/ (/home/pi), add the following line:
 
-`@reboot /home/pi/dsmr-mqtt-wrapper/dsmr-mqtt-wrapper.py`
+`@reboot cd $HOME/projects/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py`
