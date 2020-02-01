@@ -30,7 +30,7 @@ repo to the home directory of the pi user (/home/pi), add the following line:
 `@reboot /bin/bash -c 'cd $HOME/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py' > /dev/null 2>&1`
 
 ## Configuring Home Assistant
-By adding the following lines to you Home Assistant configuration.yaml the
+By adding the following lines to your Home Assistant configuration.yaml the
 smart meter values can be read:
 
 ```yaml
