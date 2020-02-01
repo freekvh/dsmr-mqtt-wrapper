@@ -4,7 +4,7 @@ electricity/gas meter with a P1 cable. It receives the data and publishes the
 selected information to an MQTT topic. It is configured via a single YAML file
 and leans heavily on the dsmr_parser library from Nigel Dokter (Github).
 
-## Instalation
+## Installation
 Optionally create a virtual environment and enter it, on Raspbian do;
 
 `sudo apt-get install python3-venv`
