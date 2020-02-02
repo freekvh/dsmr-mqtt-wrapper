@@ -5,6 +5,7 @@ mqtt_client_name: smart_meter # This can be left unchanged
 #mqtt_username: homeassistant # Uncomment and change this to your username if required
 #mqtt_password: homeassistant
 
+# List the values that you want to send to the mqtt broker
 values_of_interest:
   - CURRENT_ELECTRICITY_USAGE
   - ELECTRICITY_USED_TARIFF_ALL
@@ -13,6 +14,6 @@ values_of_interest:
 topic: home/smart_meter
 
 # Default settings, probably best left alone
-device=: /dev/ttyUSB0
+device: /dev/ttyUSB0
 serial_settings: SERIAL_SETTINGS_V5
 telegram_specification: telegram_specifications.V4
