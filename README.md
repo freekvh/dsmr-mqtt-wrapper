@@ -36,6 +36,9 @@ Home Assistant but it is deprecated
 standalone broker like mosquitto, easyly installed in hass.io or using docker
 (compose).
 
+List all the values that you want to publish via mqtt under
+values\_of\_interest:".
+
 Add a line in the crontab so that the script starts at boot, if you cloned this
 repo to the home directory of the pi user (/home/pi), add the following line:
 
