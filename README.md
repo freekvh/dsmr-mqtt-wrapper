@@ -20,9 +20,21 @@ Clone this git repository
 
 `git clone https://gitlab.com/freekvh/dsmr-mqtt-wrapper.git`
 
+
+Enter the cloned directory and install the program and its dependencies
+
+`cd dsmr-mqtt-wrapper`
+
+`pip install .`
+
 ## Configuration
 In the config.yaml file, change the value for mqtt_broker_address to the address
-of your mqtt broker.
+of your mqtt broker. This should be all you have to change if you have not
+configured a user/password or encryption. You can use the mqtt broker build into
+Home Assistant but it is deprecated
+([https://www.home-assistant.io/integrations/mqtt/]). It is better to run a
+standalone broker like mosquitto, easyly installed in hass.io or using docker
+(compose).
 
 Add a line in the crontab so that the script starts at boot, if you cloned this
 repo to the home directory of the pi user (/home/pi), add the following line:
