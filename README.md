@@ -2,7 +2,8 @@
 This program is intended to run on a Raspberry Pi attached to a Dutch smart
 electricity/gas meter with a P1 cable. It receives the data and publishes the
 selected information to an MQTT topic. It is configured via a single YAML file
-and leans heavily on the dsmr_parser library from Nigel Dokter (Github).
+and leans heavily on the dsmr_parser library from Nigel Dokter
+([https://github.com/ndokter/dsmr_parser]).
 
 ## Installation
 Optionally create a virtual environment and enter it, on Raspbian do;
