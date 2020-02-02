@@ -3,7 +3,7 @@ This program is intended to run on a Raspberry Pi attached to a Dutch smart
 electricity/gas meter with a P1 cable. It receives the data and publishes the
 selected information to an MQTT topic. It is configured via a single YAML file
 and leans heavily on the dsmr_parser library from Nigel Dokter
-([https://github.com/ndokter/dsmr_parser]).
+(https://github.com/ndokter/dsmr_parser).
 
 ## Installation
 Optionally create a virtual environment and enter it, on Raspbian do;
@@ -33,7 +33,7 @@ In the config.yaml file, change the value for mqtt_broker_address to the address
 of your mqtt broker. This should be all you have to change if you have not
 configured a user/password or encryption. You can use the mqtt broker build into
 Home Assistant but it is deprecated
-([https://www.home-assistant.io/integrations/mqtt/]). It is better to run a
+(https://www.home-assistant.io/integrations/mqtt/). It is better to run a
 standalone broker like mosquitto, easyly installed in hass.io or using docker
 (compose).
 
