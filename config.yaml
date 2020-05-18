@@ -2,8 +2,8 @@
 
 mqtt_broker_address: your_broker_address # Set this to your mqtt broker address
 mqtt_client_name: smart_meter # This can be left unchanged
-#mqtt_username: homeassistant # Uncomment and change this to your username if required
-#mqtt_password: homeassistant
+#mqtt_username: 'homeassistant' # Uncomment and change this to your username if required
+#mqtt_password: 'homeassistant'
 
 # List the values that you want to send to the mqtt broker
 values_of_interest:
