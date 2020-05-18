@@ -28,6 +28,7 @@ serial_reader = SerialReader(
 client = mqtt.Client(config['mqtt_client_name'])
 if 'mqtt_username' in config:
     client.username_pw_set(config['mqtt_username'], password=config['mqtt_password'])
+client.reconnect_delay_set(min_delay=1, max_delay=120)
 client.connect(config['mqtt_broker_address'])
 
 # Get all the telegram's values into a dictionary
