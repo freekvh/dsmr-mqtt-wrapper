@@ -45,6 +45,18 @@ repo to the home directory of the pi user (/home/pi), add the following line:
 
 `@reboot /bin/bash -c 'cd $HOME/dsmr-mqtt-wrapper && source $HOME/.venv/dsmr-mqtt-wrapper/bin/activate && ./dsmr-mqtt-wrapper.py' > /dev/null 2>&1`
 
+Alternatively, copy the file dsmr-mqtt-wrapper.service to /etc/systemd/system
+
+`sudo cp dsmr-mqtt-wrapper.service /etc/systemd/system`
+
+enable the service (start on boot)
+
+`sudo systemctl enable dsmr-mqtt-wrapper.service`
+
+and start it
+
+`sudo systemctl start dsmr-mqtt-wrapper.service`
+
 ## Configuring Home Assistant
 By adding the following lines to your Home Assistant configuration.yaml the
 smart meter values can be read:
