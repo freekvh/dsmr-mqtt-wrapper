@@ -70,14 +70,19 @@ sensor:
     name: "Current usage"
     state_topic: "home/smart_meter/CURRENT_ELECTRICITY_USAGE"
     unit_of_measurement: 'kW'
+    device_class: 'power'
+    state_class: 'measurement'
 
   - platform: mqtt
     name: "Electricity used"
     state_topic: "home/smart_meter/ELECTRICITY_USED_TARIFF_ALL"
     unit_of_measurement: 'kWh'
+    state_class: 'measurement'
+    device_class: 'energy'
 
   - platform: mqtt
     name: "Gas consumed"
     state_topic: "home/smart_meter/HOURLY_GAS_METER_READING"
     unit_of_measurement: 'm3'
+    state_class: 'measurement'
 ```
