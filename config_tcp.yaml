@@ -1,0 +1,23 @@
+# Specify the list of keys you want to send over MQTT
+
+mqtt_broker_address: 'nas.ds18' # Set this to your mqtt broker address
+mqtt_client_name: 'dsmr-mqtt-wrapper-steca' # This can be left unchanged
+mqtt_username: 'mqtt_user' # Uncomment and change this to your username if required
+mqtt_password: 'xxxx'
+
+# List the values that you want to send to the mqtt broker
+values_of_interest:
+  - CURRENT_ELECTRICITY_USAGE
+  - CURRENT_ELECTRICITY_DELIVERY
+  - ELECTRICITY_IMPORTED_TOTAL
+  - ELECTRICITY_EXPORTED_TOTAL
+  - INSTANTANEOUS_ACTIVE_POWER_L1_POSITIVE
+  - INSTANTANEOUS_ACTIVE_POWER_L2_POSITIVE
+  - INSTANTANEOUS_ACTIVE_POWER_L3_POSITIVE
+
+client: tcp
+host: nas.ds18
+port: 5006
+telegram_specification: 5S
+
+topic: DS18/PV/StecaGrid_3600
